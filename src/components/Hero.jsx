@@ -9,6 +9,17 @@ const Hero = () => {
     'Cloud Infrastructure'
   ];
 
+  // Function to handle CV download
+  const handleDownloadCV = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/public/boamah_CV.pdf'; // Place your PDF in the public folder
+    link.download = 'Ellise_Grant_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 px-6 relative">
       <div className="max-w-5xl mx-auto w-full">
@@ -20,7 +31,7 @@ const Hero = () => {
               Ellise Grant
             </h1>
             <h2 className="text-3xl md:text-4xl text-gray-400 font-light mb-6">
-              Senior Software Engineer
+              Software Engineer
             </h2>
             <p className="text-xl text-gray-300 leading-relaxed max-w-3xl">
               I build scalable web applications and lead engineering teams to deliver exceptional digital products. 
@@ -43,8 +54,8 @@ const Hero = () => {
           {/* Expanded Description */}
           <div className="max-w-3xl space-y-4">
             <p className="text-gray-300 leading-relaxed">
-              With over 12 years of experience in software development, I've helped startups scale to millions of users 
-              and led engineering teams at Fortune 500 companies. My expertise spans the entire development lifecycle, 
+              With over 3 years of experience in software development, I've helped startups scale to millions of users 
+              and led engineering teams at Fortune 6 companies. My expertise spans the entire development lifecycle, 
               from architecture and design to deployment and maintenance.
             </p>
             <p className="text-gray-300 leading-relaxed">
@@ -69,13 +80,13 @@ const Hero = () => {
             >
               View My Work
             </a>
-            <a 
-              href="#"
-              className="px-8 py-4 bg-transparent border-2 border-gray-700 text-white font-semibold rounded-lg hover:border-primary transition-all duration-300 flex items-center gap-2"
+            <button 
+              onClick={handleDownloadCV}
+              className="px-8 py-4 bg-transparent border-2 border-gray-700 text-white font-semibold rounded-lg hover:border-primary hover:text-primary transition-all duration-300 flex items-center gap-2"
             >
               <Download className="w-5 h-5" />
               Download CV
-            </a>
+            </button>
           </div>
 
           {/* Social Links & Stats */}
@@ -83,7 +94,7 @@ const Hero = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-3">
               <a 
-                href="https://github.com" 
+                href="https://github.com/ellisegrant?tab=overview&from=2026-01-01&to=2026-01-06" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 border border-gray-700 rounded-lg hover:border-primary hover:text-primary transition-all duration-300"
@@ -91,7 +102,7 @@ const Hero = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/ellise-grant-boamah-895313230/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 border border-gray-700 rounded-lg hover:border-primary hover:text-primary transition-all duration-300"
@@ -99,7 +110,7 @@ const Hero = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:hello@ellisegrant.dev"
+                href="elliseboamah@gmail.com"
                 className="p-3 border border-gray-700 rounded-lg hover:border-primary hover:text-primary transition-all duration-300"
               >
                 <Mail className="w-5 h-5" />
@@ -109,21 +120,18 @@ const Hero = () => {
             {/* Stats */}
             <div className="flex gap-8">
               <div>
-                <div className="text-3xl font-bold text-white">12+</div>
+                <div className="text-3xl font-bold text-white">3+</div>
                 <div className="text-sm text-gray-500">Years</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">165+</div>
+                <div className="text-3xl font-bold text-white">30+</div>
                 <div className="text-sm text-gray-500">Projects</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white">50+</div>
+                <div className="text-3xl font-bold text-white">10+</div>
                 <div className="text-sm text-gray-500">Clients</div>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-white">15+</div>
-                <div className="text-sm text-gray-500">Awards</div>
-              </div>
+              
             </div>
           </div>
 

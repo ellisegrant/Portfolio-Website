@@ -32,14 +32,14 @@ const About = () => {
             <div className="sticky top-24">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gray-800 mb-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop" 
+                  src="/public/profile.jpg"
                   alt="Ellise Grant"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h2 className="text-3xl font-bold mb-2">Ellise Grant</h2>
-              <p className="text-gray-400 mb-4">Senior Software Engineer</p>
-              <p className="text-sm text-gray-500">New York, NY</p>
+              <p className="text-gray-400 mb-4">Software Engineer</p>
+              <p className="text-sm text-gray-500">Ghana-Accra</p>
             </div>
           </div>
 
@@ -49,13 +49,16 @@ const About = () => {
               <h3 className="text-xl font-semibold mb-4 text-primary">About Me</h3>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  I'm a senior software engineer with over 12 years of experience building scalable web applications and leading engineering teams. I specialize in full-stack development with a focus on React, Node.js, and cloud architecture.
+                  I’m a software engineer passionate about building user-focused web applications and well-designed interfaces. I work
+                   across frontend and backend systems, creating functional, intuitive, and visually appealing digital solutions.
                 </p>
                 <p>
-                  Throughout my career, I've worked with startups and enterprise companies, helping them solve complex technical challenges and deliver high-quality products. I'm passionate about writing clean, maintainable code and mentoring junior developers.
+                  Outside of my professional work, I’m an avid reader with a deep love for books across a wide range of genres—from novels and history to technology and other nonfiction.
+                  I also enjoy playing soccer, which has strengthened my appreciation for teamwork, discipline, and strategic thinking
                 </p>
                 <p>
-                  When I'm not coding, I contribute to open-source projects, write technical articles, and speak at developer conferences.
+                  I’m comfortable working in collaborative teams, leading frontend efforts, and communicating with non-technical stakeholders to translate business needs into effective technical solutions.
+                   I’m constantly learning, refining my skills, and building in public as I continue to grow as a software engineer.
                 </p>
               </div>
             </div>

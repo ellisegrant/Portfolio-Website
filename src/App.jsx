@@ -2,11 +2,15 @@ import React from 'react'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './Pages/About'
+import Experience from './Pages/Experience'
 import Projects from './Pages/Projects'
+import CaseStudies from './Pages/Casestudies'
+import GitHubShowcase from './Pages/GitHubShowcase'
+import Education from './Pages/Education'
+import Blog from './Pages/Blog'
 import Testimonials from './Pages/Testimonials'
 import Awards from './Pages/Awards'
 import Contact from './Pages/Contact'
-import Blog from './Pages/Blog'
 
 function App() {
   return (
@@ -14,8 +18,12 @@ function App() {
       <Navigation />
       <Hero />
       <About />
-      <Blog/>
+      <Experience />
       <Projects />
+      <CaseStudies />
+      <GitHubShowcase />
+      <Education />
+      <Blog />
       <Testimonials />
       <Awards />
       <Contact />
