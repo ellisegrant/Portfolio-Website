@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply font-sans bg-dark text-white antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-lighter;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
+
+@layer components {
+  /* Button styles */
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-black font-semibold rounded-lg 
+           hover:bg-primary-dark transition-all duration-300 
+           hover:shadow-glow hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-transparent border-2 border-primary text-primary 
+           font-semibold rounded-lg hover:bg-primary hover:text-black 
+           transition-all duration-300;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl 
+           border border-gray-700 p-6 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:border-primary/50 hover:shadow-glow;
+  }
+
+  /* Section styles */
+  .section {
+    @apply py-24 px-6;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-12;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  /* Background gradients */
+  .bg-gradient-radial {
+    background-image: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent;
+  }
+
+  /* Glow effects */
+  .glow-effect {
+    @apply relative;
+  }
+
+  .glow-effect::before {
+    content: '';
+    @apply absolute inset-0 bg-primary/20 blur-xl rounded-full -z-10;
+  }
+
+  /* Glass morphism */
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+}
+
+/* Custom animations */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
