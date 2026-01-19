@@ -7,7 +7,7 @@ const Experience = () => {
   company: 'Gulf of Guinea Maritime Institute',
   role: 'Software Engineer',
   period: 'September 2025',
-  location: 'Ghana',
+  location: 'Accra,Ghana',
   description: 'Software Engineer responsible for developing and maintaining web-based systems, managing internal digital platforms, and providing technical support across software and hardware infrastructure.',
   achievements: [
     "Designed and developed the institute's intranet system using modern web technologies to support internal communication and administrative workflows",
@@ -32,7 +32,7 @@ const Experience = () => {
       company: 'CALABASH ROYALS',
       role: 'Project Manager/Frontend developer',
       period: '2024/11 – 2025/03',
-      location: 'GHANA-KUMASI',
+      location: 'Ghana ,Kumasi',
       description: 'Collaborated with a team to develop responsive, user-friendly interfaces for the Calabash Royals and ChromaWear websites using HTML, CSS, JavaScript, and React.',
       achievements: [
         'Built a responsive, mobile-first web application using React and TypeScript for food ordering and online payments',
@@ -50,19 +50,86 @@ const Experience = () => {
       
     },
     {
-      company: 'WebDev Agency',
-      role: 'Junior Developer',
-      period: 'Jan 2014 - May 2016',
-      location: 'Boston, MA',
-      description: 'Built responsive websites and web applications for various clients across different industries.',
-      achievements: [
-        'Developed 20+ client websites using modern web technologies',
-        'Collaborated with designers to implement pixel-perfect designs',
-        'Maintained and updated legacy codebases for existing clients',
-        'Learned full-stack development and gained experience with multiple frameworks'
-      ],
-      technologies: ['JavaScript', 'HTML/CSS', 'jQuery', 'PHP', 'WordPress', 'MySQL']
-    }
+  company: 'AmaliTech Service GmbH',
+  role: 'Cloud Engineering Intern',
+  period: '2024/09 – 2025/01',
+  location: 'Kumasi, Ghana',
+  description: 'Cloud Engineering Intern under the AWS Restart program, gaining hands-on experience in cloud computing fundamentals and AWS best practices.',
+  achievements: [
+    'Completed extensive hands-on labs and real-world practical exercises as part of the AWS Restart program',
+    'Gained practical experience with core AWS services including EC2, S3, IAM, VPC, and CloudWatch',
+    'Applied cloud security best practices, including identity and access management and basic networking concepts',
+    'Collaborated with team members on cloud-related tasks and architectural exercises',
+    'Prepared for and successfully passed the AWS Certified Cloud Practitioner exam'
+  ],
+  technologies: [
+    'AWS (EC2, S3, IAM, VPC, CloudWatch)',
+    'Cloud Computing Fundamentals',
+    'Linux',
+    'Basic Networking',
+    'Git'
+  ]
+},
+
+
+
+{
+  company: 'Mursi Bioscience',
+  role: 'Data Science & Machine Learning Engineer Intern',
+  period: '2024/01 – 2024/04',
+  location: 'Accra , Ghana',
+  description: 'Data Science and Machine Learning Engineer Intern working on healthcare datasets to support data-driven insights and early-stage ML workflows.',
+  achievements: [
+    'Sourced, cleaned, and preprocessed healthcare datasets for analysis and machine learning pipelines',
+    'Performed exploratory data analysis (EDA) to uncover trends, correlations, and feature relationships',
+    'Assisted in feature engineering and data preparation for predictive modeling tasks',
+    'Applied statistical analysis to validate data quality and support model assumptions',
+    'Supported development and evaluation of machine learning models for healthcare-related use cases',
+    'Documented data pipelines, experiments, and findings to ensure reproducibility and collaboration'
+  ],
+  technologies: [
+    'Python',
+    'Pandas',
+    'NumPy',
+    'Scikit-learn',
+    'Exploratory Data Analysis (EDA)',
+    'Feature Engineering',
+    'Matplotlib',
+    'Jupyter Notebook',
+    'Data Cleaning'
+  ]
+},
+
+
+
+{
+  company: 'Klips',
+  role: 'Frontend Engineer Intern (React)',
+  period: '2023/08 – 2023/12',
+  location: 'Accra, Ghana',
+  description: 'Frontend Engineer Intern focused on building and scaling the web version of the Klips mobile application using React.',
+  achievements: [
+    'Developed reusable and scalable React components for the web version of the Klips mobile app',
+    'Implemented state management and component-based architecture to improve UI consistency',
+    'Translated UI/UX designs into responsive React interfaces optimized for multiple screen sizes',
+    'Collaborated with backend developers to consume REST APIs and render dynamic data',
+    'Handled client-side routing, conditional rendering, and form validation in React',
+    'Participated in testing, debugging, and performance optimization across browsers and devices'
+  ],
+  technologies: [
+    'React',
+    'JavaScript (ES6+)',
+    'HTML',
+    'CSS',
+    'REST APIs',
+    'Responsive Design',
+    'Git'
+  ]
+}
+
+
+
+
   ];
 
   return (

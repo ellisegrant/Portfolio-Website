@@ -3,79 +3,69 @@ import { GraduationCap, Award, ExternalLink, Calendar } from 'lucide-react';
 
 const Education = () => {
   const degrees = [
-    {
-      degree: 'Master of Science in Computer Science',
-      school: 'Stanford University',
-      location: 'Stanford, CA',
-      period: '2010 - 2012',
-      gpa: '3.9/4.0',
-      focus: 'Distributed Systems & Machine Learning',
-      achievements: [
-        'Published research on distributed consensus algorithms',
-        'Teaching Assistant for Advanced Algorithms course',
-        'President of Computer Science Graduate Association'
-      ]
-    },
-    {
-      degree: 'Bachelor of Science in Software Engineering',
-      school: 'MIT',
-      location: 'Cambridge, MA',
-      period: '2006 - 2010',
-      gpa: '3.8/4.0',
-      focus: 'Software Architecture & Database Systems',
-      achievements: [
-        'Dean\'s List all semesters',
-        'Senior thesis on scalable web architectures',
-        'Captain of ACM programming competition team'
-      ]
-    }
-  ];
+  {
+    degree: 'Bachelor of Science in Computer Science',
+    school: 'Kwame Nkrumah University of Science and Technology (KNUST)',
+    location: 'Kumasi, Ghana',
+    period: '2022 – 2025',
+    focus: 'Software Engineering, Data Science & Machine Learning',
+    achievements: [
+      'Completed coursework in data structures, algorithms, databases, and software engineering',
+      'Built multiple academic and personal projects using modern web and data technologies',
+      'Applied machine learning techniques to healthcare-related datasets for predictive analysis',
+      'Actively participated in tech communities, internships, and hands-on training programs'
+    ]
+  }
+];
+
+  
+  
 
   const certifications = [
     {
-      name: 'AWS Certified Solutions Architect - Professional',
+      name: 'AWS Certified Cloud Practioner',
       issuer: 'Amazon Web Services',
-      date: 'December 2023',
-      expires: 'December 2026',
-      credentialId: 'AWS-PSA-12345',
-      badge: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=100&h=100&fit=crop',
-      verifyUrl: '#'
+      date: 'December 23, 2024',
+      expires: 'December 23, 2027',
+      // credentialId: 'AWS-PSA-12345',
+      badge: '/cloudpractioner-cert.png',
+      verifyUrl: 'https://www.credly.com/badges/b8ba9a3e-8b89-48d9-b799-6f6ed298da19/linked_in_profile'
     },
     {
-      name: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      date: 'September 2023',
-      expires: 'September 2025',
-      credentialId: 'GCP-PD-67890',
-      badge: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=100&h=100&fit=crop',
-      verifyUrl: '#'
+      name: 'AWS re/Start Graduate',
+      issuer: 'Amazon Web Services',
+      date: 'December 08, 2024',
+      // expires: 'September 2025',
+      // credentialId: 'GCP-PD-67890',
+      badge: '/aws-restart.png',
+      verifyUrl: 'https://www.credly.com/badges/f410eace-4177-4b13-b7c9-33d511aef83d/linked_in_profile'
     },
     {
-      name: 'Certified Kubernetes Administrator (CKA)',
-      issuer: 'Cloud Native Computing Foundation',
-      date: 'June 2023',
-      expires: 'June 2026',
-      credentialId: 'CKA-54321',
-      badge: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=100&h=100&fit=crop',
-      verifyUrl: '#'
+      name: 'Data Engineering on AWS-Foundation',
+      issuer: 'Amazon Web Services',
+      date: 'May 23, 2025',
+      // expires: 'June 2026',
+      // credentialId: 'CKA-54321',
+      badge: '/dataengineer.cert.jpg',
+      verifyUrl: 'https://www.linkedin.com/in/ellise-grant-boamah-895313230/'
     },
     {
-      name: 'MongoDB Certified Developer Associate',
-      issuer: 'MongoDB University',
-      date: 'March 2023',
-      expires: null,
-      credentialId: 'MONGO-DEV-99999',
-      badge: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=100&h=100&fit=crop',
-      verifyUrl: '#'
+      name: 'Scientific Computing Python',
+      issuer: 'FreeCodeCamp',
+      date: 'September 10, 2024',
+      // expires: null,
+      // credentialId: 'MONGO-DEV-99999',
+      badge: '/python.freecodecamp.cert.png',
+      verifyUrl: 'https://www.freecodecamp.org/certification/fcc06a72ea1-e0ef-4839-a8ce-f1d96e9d24c4/scientific-computing-with-python-v7'
     },
     {
-      name: 'Professional Scrum Master I (PSM I)',
-      issuer: 'Scrum.org',
-      date: 'January 2022',
-      expires: null,
-      credentialId: 'PSM-11111',
-      badge: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&h=100&fit=crop',
-      verifyUrl: '#'
+      name: 'Legacy JavaScript Algorithms and Data Structures v7',
+      issuer: 'FreeCodeCamp',
+      date: 'April 16, 2023',
+      // expires: null,
+      // credentialId: 'PSM-11111',
+      badge: '/javascript.cert.png',
+      verifyUrl: 'https://www.freecodecamp.org/certification/fcc06a72ea1-e0ef-4839-a8ce-f1d96e9d24c4/javascript-algorithms-and-data-structures'
     },
     {
       name: 'HashiCorp Certified: Terraform Associate',
@@ -83,7 +73,7 @@ const Education = () => {
       date: 'November 2022',
       expires: 'November 2024',
       credentialId: 'TERRAFORM-22222',
-      badge: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=100&h=100&fit=crop',
+      badge: '/machinelearning.cert.jpg',
       verifyUrl: '#'
     }
   ];
@@ -201,7 +191,7 @@ const Education = () => {
                 <div className="space-y-1 text-xs text-gray-400 mb-4">
                   <p>Issued: {cert.date}</p>
                   {cert.expires && <p>Expires: {cert.expires}</p>}
-                  <p>ID: {cert.credentialId}</p>
+                 
                 </div>
 
                 {/* Verify Link */}

@@ -93,25 +93,8 @@ const About = () => {
           </div>
         </div>
 
-        {/* Experience Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-12 border-t border-gray-800">
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">12+</div>
-            <div className="text-sm text-gray-400">Years Experience</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">165+</div>
-            <div className="text-sm text-gray-400">Projects Completed</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">50+</div>
-            <div className="text-sm text-gray-400">Happy Clients</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">15+</div>
-            <div className="text-sm text-gray-400">Awards Won</div>
-          </div>
-        </div>
+       
+       
       </div>
     </section>
   );
